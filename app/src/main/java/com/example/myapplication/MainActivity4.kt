@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.graphics.Insets.add
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,26 +26,18 @@ class MainActivity4 : AppCompatActivity() {
             val num2 = input2.text.toString().toDouble()
 
             val op = operator.selectedItem.toString()
-            var con:Double = 0.0
             when(op)
             {
-                "+" -> {
-                    con= (num1+num2).toDouble()
-                    result.setText("Addition of $num1 and $num2 is $con")
-                }
-                "-" -> {
-                    con= (num1-num2).toDouble()
-                    result.setText("Subtraction of $num1 and $num2 is $con")
-                }
-                "*" -> {
-                    con= (num1*num2).toDouble()
-                    result.setText("Multiplictaion of $num1 and $num2 is $con")
-                }
-                "/" -> {
-                    con=  num1/num2.toDouble()
-                    result.setText("Division of $num1 and $num2 is $con")
-                }
+                "+" -> result.setText("Addition of $num1 and $num2 is "+ add(num1,num2))
+                "-" -> result.setText("Subtraction of $num1 and $num2 is "+ sub(num1,num2))
+                "*" -> result.setText("Multiplication of $num1 and $num2 is "+ mul(num1,num2))
+                "/" -> result.setText("Division of $num1 and $num2 is "+ div(num1,num2))
             }
+
         })
     }
+    fun add(num1:Double,num2:Double):Double =num1+num2
+    fun sub(num1: Double,num2: Double):Double = num1-num2
+    fun mul(num1: Double,num2: Double):Double = num1*num2
+    fun div(num1: Double,num2: Double):Double = num1/num2
 }
