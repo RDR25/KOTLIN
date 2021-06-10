@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="404dp"
+        android:layout_height="427dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/board"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:onClick="coinAppear"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="13dp"
+            android:onClick="coinAppear"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="11dp"
+            android:onClick="coinAppear"
+            android:tag="2"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="3"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="4"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="5"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="6"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="7"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="127dp"
+            android:layout_height="135dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coinAppear"
+            android:tag="8"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="69dp"
+        android:text="PLAY AGAIN"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

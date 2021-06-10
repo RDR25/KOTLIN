@@ -1,88 +1,38 @@
 package com.example.myapplication
 
 import android.animation.BidirectionalTypeConverter
+import android.widget.Toast
 import java.util.*
+
 
 fun main()
 {
-    feedFood()
-}
-
-fun feedFood()
-{
-    val day:String = WhichDay()
-    val Food:String = foodToFeed(day)
-    println("Today is $day you need to feed $Food")
-    var Change:Boolean = change()
-
-    if(Change || day=="Sunday")
+    var arr = arrayOf(arrayOf(12,432,84), arrayOf(554,4844,45), arrayOf(212,874,14),arrayOf(28,4644,545), arrayOf(912,74,654))
+    /*for(i in arr)
     {
-        println("you need to change water")
-    }
-    else
+        println(i[0])
+    }*/
+    var gameState = arrayOf(0,0,0,0,0,0,0,0,0)
+    var activePlayer = 1
+    var gameActive = true
+    var winningPos = arrayOf(arrayOf(0,1,2),arrayOf(3,4,5),arrayOf(6,7,8),arrayOf(0,3,6),arrayOf(1,4,7),arrayOf(2,5,8),arrayOf(0,4,8),arrayOf(2,4,6))
+    for(i in winningPos)
     {
-        println("No need to change water")
+        println("${i[0]}   ${i[1]}   ${i[2]}" )
     }
-}
-
-
-fun change():Boolean
-{
-    var Temp:Boolean = checkTemp()
-    var Dirt:Boolean = checkDirt()
-    if((Temp || Dirt))
+   /* for(pos in winningPos)
     {
-        return true
-    }
-    else
-    {
-        return false
-    }
-}
-
-fun WhichDay():String
-{
-    val Day:String
-    val arr = arrayOf("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
-    Day = arr[Random().nextInt(arr.size)]
-    return Day
-}
-
-
-fun foodToFeed(day:String):String
-{
-    var food:String=""
-    when(day)
-    {
-        "Monday" ->food ="Flakes"
-        "Tuesday" ->food ="Pellets"
-        "Wednesday" ->food="Redworms"
-        "Thursday" -> food="Granules"
-        "Friday" -> food="Mosquitoes"
-        "Saturday" -> food="Lettuce"
-        "Sunday" -> food ="Planton"
-    }
-    return food
-}
-
-fun checkDirt():Boolean
-{
-    val Dirt:Int = 29
-    if(Dirt>=30){
-        return true
-    }
-    else{
-        return false
-    }
-}
-
-fun checkTemp():Boolean
-{
-    val Temp:Int = 20
-    if(Temp>=30){
-        return true
-    }
-    else{
-        return false
-    }
+        if(gameState[pos[0]]!=0 && gameState[pos[0]] == gameState[pos[1]] && gameState[pos[1]] == gameState[pos[2]] )
+        {
+            gameActive =false
+            if(activePlayer ==1)
+            {
+                Toast.makeText(this, "BLACK is the winner", Toast.LENGTH_LONG).show()
+            }
+            else
+            {
+                Toast.makeText(this,"White is the winner",Toast.LENGTH_LONG).show()
+            }
+        }
+    }*/
 }
