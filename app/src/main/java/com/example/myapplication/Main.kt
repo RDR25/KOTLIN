@@ -7,8 +7,7 @@ import java.util.*
 
 fun main()
 {
-    var admin = Admin()
-    admin.name="ravula dimple rdr"
-    admin.gender="male"
+    var admin = Admin("RDR","Male")
     admin.display()
+
 }

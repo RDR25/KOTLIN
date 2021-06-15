@@ -1,14 +1,12 @@
 package com.example.myapplication
 
-
-class Admin
+class Admin(var name:String,var gender:String)
 {
-    var name:String=""
-    set(value)
-    {
-        field=value.reversed()
+    init {
+        var age = 10
+        println(age)
     }
-    var gender:String="Male"
+
     fun display() {
         println("$name is $gender")
     }
