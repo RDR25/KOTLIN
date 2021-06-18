@@ -1,13 +1,6 @@
 package com.example.myapplication
 
-class Admin(var name:String,var gender:String)
+class Admin(name:String,gender:String):person1(name, gender)
 {
-    init {
-        var age = 10
-        println(age)
-    }
 
-    fun display() {
-        println("$name is $gender")
-    }
 }

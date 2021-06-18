@@ -7,7 +7,6 @@ import java.util.*
 
 fun main()
 {
-    var admin = Admin("RDR","Male")
-    admin.display()
-
+    var boy=boy1("RDR",19)
+    boy.display()
 }
