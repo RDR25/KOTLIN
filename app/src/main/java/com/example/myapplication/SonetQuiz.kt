@@ -27,6 +27,7 @@ class SonetQuiz : AppCompatActivity() {
             else
             {
                 val next:Intent= Intent(this,quizActivity()::class.java)
+                next.putExtra("name",q_name)
                 startActivity(next)
                 finish()
             }
