@@ -25,11 +25,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="15dp"
+            android:padding="5dp"
             android:text="NAME"
-            android:textSize="22dp"
+            android:textSize="16dp"
             android:textStyle="bold"
-            android:layout_margin="15dp"
+            android:layout_margin="5dp"
             android:drawableBottom="@drawable/border_quiz"
             >
 
@@ -47,8 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="15dp"
-            android:padding="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
             android:text="Kotlin is ?"
             android:textSize="24dp"></TextView>
 
@@ -58,17 +58,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:padding="10dp"
         >
 
         <TextView
             android:id="@+id/q_optOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:background="@drawable/border_quiz"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="7dp"
             android:text="OOPS based Language"
             android:textColor="#000066"
             android:textSize="22dp">
@@ -79,10 +79,10 @@
             android:id="@+id/q_optTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:background="@drawable/border_quiz"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="7dp"
             android:text="OOPS based Language"
             android:textColor="#000066"
             android:textSize="22dp"></TextView>
@@ -91,10 +91,10 @@
             android:id="@+id/q_optThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:background="@drawable/border_quiz"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="7dp"
             android:text="OOPS based Language"
             android:textColor="#000066"
             android:textSize="22dp"></TextView>
@@ -103,10 +103,10 @@
             android:id="@+id/q_optFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:background="@drawable/border_quiz"
             android:gravity="center"
-            android:padding="20dp"
+            android:padding="7dp"
             android:text="OOPS based Language"
             android:textColor="#000066"
             android:textSize="22dp"></TextView>
@@ -130,12 +130,12 @@
             android:text="End"></Button>
 
         <Button
-            android:id="@+id/q_next"
+            android:id="@+id/q_submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="Next"></Button>
+            android:text="SUBMIT"></Button>
 
     </LinearLayout>
 
