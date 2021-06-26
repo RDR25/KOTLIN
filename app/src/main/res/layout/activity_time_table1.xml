@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".timeTable1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/s_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#F85F68"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="TIME TABLE"
+            android:textSize="26dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/s_cse"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="CSE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/s_online_classes"
+                app:layout_column="0"
+                app:layout_row="0" />
+
+            <TextView
+                android:id="@+id/s_ece"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/s_online_classes"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ECE"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_column="0"
+                app:layout_row="1" />
+
+            <TextView
+                android:id="@+id/s_it"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="IT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/s_online_classes"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+
+
+            <TextView
+                android:id="@+id/s_eie"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textSize="24dp"
+                android:text="EIE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/s_online_classes"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </LinearLayout>
+</ScrollView>

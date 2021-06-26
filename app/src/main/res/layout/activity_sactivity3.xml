@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".s_activity3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TimeTable"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#F85F68"
+            android:textColor="@color/white">
+        </TextView>
+
+        <TextView
+            android:id="@+id/s_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textStyle="italic"
+            android:padding="20dp"
+            android:gravity="center"
+            android:background="@drawable/on_click_border"
+            android:textSize="22dp"></TextView>
+
+        <TextView
+                android:id="@+id/s_periodOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Class 1"
+                android:background="@drawable/border_quiz">
+            </TextView>
+
+            <TextView
+                android:id="@+id/s_periodTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Class 2"
+                android:background="@drawable/on_click_border">
+            </TextView>
+
+            <TextView
+                android:id="@+id/s_periodThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border_quiz"
+                android:text="class 3"></TextView>
+
+            <TextView
+                android:id="@+id/s_periodFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/on_click_border"
+                android:text="class 4">
+            </TextView>
+
+            <TextView
+                android:id="@+id/s_periodFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/border_quiz"
+                android:text="class 5">
+            </TextView>
+
+
+        <Button
+            android:id="@+id/s_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="HOME"
+            >
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
