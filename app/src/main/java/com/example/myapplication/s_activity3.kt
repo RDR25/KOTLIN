@@ -10,7 +10,8 @@ import org.w3c.dom.Text
 
 class s_activity3 : AppCompatActivity() {
     var timetable = subjects()
-    lateinit var today:String
+    lateinit var today: String
+    lateinit var Branch:String
     var TimeTabe =timetable.branchSChedule()
     var period= TimeSort()
     var specPeriod = period.time()
@@ -41,6 +42,18 @@ class s_activity3 : AppCompatActivity() {
             startActivity(moveActivity)
         })
 
+        var periodList = arrayListOf<TextView>(periodOne,periodTwo,periodThree,periodFour,periodFour,periodFive)
+
+        for (period in periodList)
+        {
+            period.setOnClickListener(View.OnClickListener {
+                var join = Intent(this,classJoinActivity()::class.java)
+                join.putExtra("subject",period.text)
+                join.putExtra("branch",Branch)
+                startActivity(join)
+            })
+        }
+
     }
 
     private fun isSunday()
@@ -69,7 +82,7 @@ class s_activity3 : AppCompatActivity() {
    private fun setTimeTable()
     {
         periodOne = findViewById(R.id.s_periodOne)
-        var Branch: String? = intent.getStringExtra("name")
+        Branch = intent.getStringExtra("name")!!
 
         when(Branch)
         {

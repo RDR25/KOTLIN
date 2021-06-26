@@ -22,7 +22,7 @@
             android:padding="20dp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="STUDENT BLOG"
+            android:text="STUDENT ACTIVITY"
             android:textSize="26dp" />
 
         <androidx.gridlayout.widget.GridLayout
