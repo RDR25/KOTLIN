@@ -1,6 +1,13 @@
 package com.example.myapplication
 
-class user(name:String,gender:String):person1(name,gender)
-{
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-}
+@Entity(tableName = "user_table")
+data class user(
+    @PrimaryKey(autoGenerate = true)
+    var id:Int,
+    var firstName:String,
+    var lastName:String,
+    var age:Int
+)
