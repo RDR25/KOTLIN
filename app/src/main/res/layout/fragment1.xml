@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/teal_700"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/f_fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is Fragment 1"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/f_inFragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/f_fragment1"
+        app:layout_constraintStart_toStartOf="@+id/f_fragment1"
+        app:layout_constraintTop_toBottomOf="@+id/f_fragment1"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>

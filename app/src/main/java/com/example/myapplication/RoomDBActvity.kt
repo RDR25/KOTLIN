@@ -25,8 +25,8 @@ class RoomDBActvity : AppCompatActivity() {
 
             var dao = db.userDao()
 
-            var user = user(0,"Ram","Reddy",35)
-            dao.addUser(user)
+            //var user = user(0,"Ram","Reddy",35)
+            //dao.addUser(user)
 
             var userList = dao.readAllData()
 
